@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.popuomenudemo.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        >
+        <RelativeLayout
+            android:background="@drawable/toolbar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_left"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"/>
+            <Button
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/btn_change"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="男生"
+                android:drawableRight="@android:drawable/ic_menu_more"
+                />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_right"
+                android:src="@android:drawable/ic_menu_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mToolbar"/>
+</RelativeLayout>
